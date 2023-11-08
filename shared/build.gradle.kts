@@ -1,5 +1,6 @@
 plugins {
     kotlin("multiplatform")
+    kotlin("plugin.serialization") version "1.9.0"
     id("com.android.library")
     id("org.jetbrains.compose")
 }
@@ -27,7 +28,10 @@ kotlin {
                 @OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class)
                 implementation(compose.components.resources)
                 implementation("media.kamel:kamel-image:0.8.3")
-                implementation("io.ktor:ktor-client-core:2.3.1")
+                implementation("io.ktor:ktor-client-core:2.3.5")
+                implementation("io.ktor:ktor-client-content-negotiation:2.3.5")
+                implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.5")
+                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
             }
         }
         val androidMain by getting {
