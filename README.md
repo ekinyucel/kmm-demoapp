@@ -16,6 +16,11 @@ The result will be a [Kotlin Multiplatform](https://kotlinlang.org/docs/multipla
 If you want to create an application targeting desktop platforms – Windows, macOS, or Linux –
 use the [Compose Multiplatform desktop application template](https://github.com/JetBrains/compose-multiplatform-desktop-template#readme).
 
+## TODO
+
+- repository pattern logic, data storage, caching
+- custom composable for button
+
 ## Set up the environment
 
 > **Warning**
